@@ -1,0 +1,4 @@
+
+type Mutation {
+    impersonate(id: ID!): AuthUser @canAccess(roles: [admin]) @field(resolver: "App\\GraphQL\\Mutations\\Auth\\Mutation@impersonate")
+}
